@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/demo-platform.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/asuis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/git.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/access.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/action.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/admin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/conf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/docker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/docker_container.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/docker_image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/docker_image_template.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/login_source.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/mirror.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/repo_branch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/repo_collaboration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/user_mail.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/user_role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/form/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admin/setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admin/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/repo/branch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/repo/commits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/repo/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/repo/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/repo/repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user/setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker/docker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/nginx/nginx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/repo/commits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/repo/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/repo/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user/auths.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user/profile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user/setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/docker/docker_client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/git_service_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/redis/redis_client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/repo/commits_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/repo/file_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/repo/http_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/gin.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/lib/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1WEzccD20mMzFdvA3kvRhJvJlSj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github.com/gogs" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model/db" />
+      <recent name="$PROJECT_DIR$/model/repo" />
+      <recent name="$PROJECT_DIR$/model/docker" />
+      <recent name="$PROJECT_DIR$/model/user" />
+      <recent name="$PROJECT_DIR$/model/repo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build demo-plaform">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="beta-git-service" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build beta-git-service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/app.go" />
+      <package value="beta-git-service" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build demo-plaform" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/app.go" />
+      <package value="demo-plaform" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDockercli in beta-git-service/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/docker" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="beta-git-service/tests/docker" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestDockercli$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetRawFile in beta-git-service/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/repo" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="beta-git-service/tests/repo" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetRawFile$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRedisClient in beta-git-service/tests/redis" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/redis" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="beta-git-service/tests/redis" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestRedisClient$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="beta-git-service" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build demo-plaform" />
+        <item itemvalue="Go Test.TestRedisClient in beta-git-service/tests/redis" />
+        <item itemvalue="Go Test.TestDockercli in beta-git-service/tests/docker" />
+        <item itemvalue="Go Build.go build beta-git-service" />
+        <item itemvalue="Go Test.TestGetRawFile in beta-git-service/tests/repo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1579337941952">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser/66.24.1854.1056@66.24.1854.1056" timestamp="1579337941952" />
+    <state x="696" y="195" width="584" height="713" key="#go_build_beta-git-service" timestamp="1579277013367">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="696" y="195" width="584" height="713" key="#go_build_beta-git-service/66.24.1854.1056@66.24.1854.1056" timestamp="1579277013367" />
+    <state x="781" y="310" key="FileChooserDialogImpl" timestamp="1579942768206">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1579942768206" />
+    <state width="1812" height="262" key="GridCell.Tab.0.bottom" timestamp="1580049119066">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119066" />
+    <state width="1812" height="262" key="GridCell.Tab.0.center" timestamp="1580049119064">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119064" />
+    <state width="1812" height="262" key="GridCell.Tab.0.left" timestamp="1580049119063">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119063" />
+    <state width="1812" height="262" key="GridCell.Tab.0.right" timestamp="1580049119065">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119065" />
+    <state width="1812" height="346" key="GridCell.Tab.1.bottom" timestamp="1578758048450">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="346" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048450" />
+    <state width="1812" height="346" key="GridCell.Tab.1.center" timestamp="1578758048449">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="346" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048449" />
+    <state width="1812" height="346" key="GridCell.Tab.1.left" timestamp="1578758048448">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="346" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048448" />
+    <state width="1812" height="346" key="GridCell.Tab.1.right" timestamp="1578758048449">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state width="1812" height="346" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048449" />
+    <state x="494" y="176" key="SettingsEditor" timestamp="1578730916886">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1578730916886" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579366689834">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1579366689834" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/app.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
