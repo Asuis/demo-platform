@@ -1,7 +1,7 @@
 package user
 
 import (
-	"beta-git-service/services/user"
+	"demo-plaform/services/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

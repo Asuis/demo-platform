@@ -2,69 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/demo-platform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/asuis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/git.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/auth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/access.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/admin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/comment.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/conf.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/docker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/docker_container.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/docker_image.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/docker_image_template.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/login_source.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/mirror.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/repo_branch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/repo_collaboration.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/user_mail.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/db/user_role.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/form/login.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin/setting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/repo/branch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/repo/commits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/repo/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/repo/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/repo/repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user/setting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/docker/docker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/docker/image.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/nginx/nginx.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/repo/commits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/repo/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/repo/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user/auths.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user/profile.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user/setting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/docker/docker_client_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/git_service_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/redis/redis_client_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/repo/commits_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/repo/file_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/repo/http_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/gin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/user/user_service_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,22 +167,22 @@
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1579942768206" />
-    <state width="1812" height="262" key="GridCell.Tab.0.bottom" timestamp="1580049119066">
+    <state width="1812" height="262" key="GridCell.Tab.0.bottom" timestamp="1580053626116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119066" />
-    <state width="1812" height="262" key="GridCell.Tab.0.center" timestamp="1580049119064">
+    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
+    <state width="1812" height="262" key="GridCell.Tab.0.center" timestamp="1580053626116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119064" />
-    <state width="1812" height="262" key="GridCell.Tab.0.left" timestamp="1580049119063">
+    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
+    <state width="1812" height="262" key="GridCell.Tab.0.left" timestamp="1580053626116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119063" />
-    <state width="1812" height="262" key="GridCell.Tab.0.right" timestamp="1580049119065">
+    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
+    <state width="1812" height="262" key="GridCell.Tab.0.right" timestamp="1580053626116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580049119065" />
+    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
     <state width="1812" height="346" key="GridCell.Tab.1.bottom" timestamp="1578758048450">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>

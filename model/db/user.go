@@ -65,7 +65,7 @@ func (user *User)Insert() error {
 	return nil
 }
 
-func FindListByUser(user *User, page int, pageSize int, order string) (*[]User, error) {
+func (user *User)FindListByUser(page int, pageSize int, order string) (*[]User, error) {
 	var allusers []User
 	err := Engine.Limit(pageSize,page*pageSize).OrderBy(order).Find(&allusers) //Get id>3 limit 10 offset 20
 	if err != nil {
@@ -79,7 +79,7 @@ func (user *User)Delete() error{
 	return err
 }
 
-func Update(user *User) error{
+func (user *User) Update() error{
 	affected, err := Engine.ID(user.Id).Update(user)
 
 	if err != nil && affected != 0 {
