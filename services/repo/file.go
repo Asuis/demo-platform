@@ -2,10 +2,12 @@ package repo
 
 import (
 	"github.com/gogs/git-module"
+	"path"
 )
 
-func SearchDir(path string,) (git.Entries, error){
-	repo, err := git.OpenRepository(path)
+func SearchDir(p string) (*git.Entries, error){
+
+	repo, err := git.OpenRepository(path.Join(BaseDir, p))
 	if err != nil {
 		return nil, err
 	}
@@ -25,7 +27,7 @@ func SearchDir(path string,) (git.Entries, error){
 	if err != nil {
 		return nil, err
 	}
-	return entries,nil
+	return &entries,nil
 }
 
 func GetRawFile(path string, relpath string) (*git.Blob, error){

@@ -4,6 +4,7 @@ import (
 	"demo-plaform/model/db"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
+	"strings"
 )
 
 type SignedData struct {
@@ -13,11 +14,11 @@ type SignedData struct {
 }
 
 func SignedToken(user *db.User) (string, error) {
-	token := jwt.NewWithClaims(jwt.SigningMethodES256, jwt.MapClaims{
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"ac": user.Id,
 		"n": user.LoginName,
 	})
-	tokenString, err := token.SignedString("beta_"+user.Salt)
+	tokenString, err := token.SignedString([]byte("demo_platform"))
 	if err != nil {
 		return tokenString, err
 	}
@@ -25,12 +26,19 @@ func SignedToken(user *db.User) (string, error) {
 }
 
 func ParseToken(tokenString string) (*SignedData, error)  {
+
+	if strings.HasPrefix(tokenString, "Bearer ") {
+		tokenString = strings.TrimPrefix(tokenString, "Bearer ")
+	} else {
+		return nil, fmt.Errorf("Token string format is error: %s", tokenString)
+	}
+
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
 		// Don't forget to validate the alg is what you expect:
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
 			return nil, fmt.Errorf("Unexpected signing method: %v", token.Header["alg"])
 		}
-		return []byte("my_secret_key"), nil
+		return []byte("demo_platform"), nil
 	})
 
 	if err != nil {
@@ -38,10 +46,9 @@ func ParseToken(tokenString string) (*SignedData, error)  {
 	}
 
 	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
-		fmt.Println(claims["foo"], claims["nbf"])
 
 		return &SignedData{
-			Ac:  claims["ac"].(int64),
+			Ac:  int64(claims["ac"].(float64)),
 			N:   fmt.Sprintf("%v", claims["n"]),
 			Ava: "",
 		},nil

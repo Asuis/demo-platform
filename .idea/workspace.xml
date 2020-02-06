@@ -2,11 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/user/user_service_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/proxy/proxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/test/test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/admin/admin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/admin/sys.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/repo/repo_service_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/docker_container.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/docker_container.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/db/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/repo/branch.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/branch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker/docker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/auths.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/auths.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/docker/docker_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/docker/docker_client_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/repo/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/repo/repo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/user_service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/user_service_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go Application" />
+        <option value="HTTP Request" />
         <option value="Go File" />
       </list>
     </option>
@@ -41,18 +69,152 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../github.com/gogs" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/routes/proxy" />
       <recent name="$PROJECT_DIR$/model/db" />
       <recent name="$PROJECT_DIR$/model/repo" />
       <recent name="$PROJECT_DIR$/model/docker" />
       <recent name="$PROJECT_DIR$/model/user" />
-      <recent name="$PROJECT_DIR$/model/repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo-plaform">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/v1/usr/sign_in" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/v1/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;type&quot;: &quot;0&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;,&#10;  &quot;ip&quot;: &quot;0.0.0.0&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/v1/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;type&quot;: 0,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;,&#10;  &quot;ip&quot;: &quot;0.0.0.0&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/v1/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;type&quot;: &quot;1&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;,&#10;  &quot;ip&quot;: &quot;0.0.0.0&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;type&quot;: &quot;1&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;,&#10;  &quot;ip&quot;: &quot;0.0.0.0&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;account&quot;: &quot;asuis&quot;,&#10;  &quot;type&quot;: &quot;1&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;,&#10;  &quot;ip&quot;: &quot;0.0.0.0&quot;&#10;  &#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/usr/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;user&quot;: &quot;asuis&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8000/user/sign_up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;user&quot;: &quot;asuis&quot;,&#10;  &quot;passwd&quot;: &quot;Demo127117&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.TestStdin in demo-plaform/tests/docker">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -63,55 +225,59 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build beta-git-service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAuthMiddleware in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/app.go" />
-      <package value="beta-git-service" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo-plaform" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/app.go" />
-      <package value="demo-plaform" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestDockercli in beta-git-service/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/docker" />
+      <working_directory value="$PROJECT_DIR$/tests/user" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="beta-git-service/tests/docker" />
+      <package value="demo-plaform/tests/user" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDockercli$" />
+      <pattern value="^TestAuthMiddleware$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetRawFile in beta-git-service/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestParseToken in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/user" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="demo-plaform/tests/user" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestParseToken$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSearchRepoDir in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/tests/repo" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="beta-git-service/tests/repo" />
+      <package value="demo-plaform/tests/repo" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetRawFile$" />
+      <pattern value="^TestSearchRepoDir$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRedisClient in beta-git-service/tests/redis" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSignIn in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/redis" />
+      <working_directory value="$PROJECT_DIR$/tests/user" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="beta-git-service/tests/redis" />
+      <package value="demo-plaform/tests/user" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestRedisClient$" />
+      <pattern value="^TestSignIn$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStdin in demo-plaform/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/docker" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="demo-plaform/tests/docker" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStdin$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -127,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build demo-plaform" />
-        <item itemvalue="Go Test.TestRedisClient in beta-git-service/tests/redis" />
-        <item itemvalue="Go Test.TestDockercli in beta-git-service/tests/docker" />
-        <item itemvalue="Go Build.go build beta-git-service" />
-        <item itemvalue="Go Test.TestGetRawFile in beta-git-service/tests/repo" />
+        <item itemvalue="Go Test.TestStdin in demo-plaform/tests/docker" />
+        <item itemvalue="Go Test.TestSearchRepoDir in demo-plaform/tests/repo" />
+        <item itemvalue="Go Test.TestAuthMiddleware in demo-plaform/tests/user" />
+        <item itemvalue="Go Test.TestParseToken in demo-plaform/tests/user" />
+        <item itemvalue="Go Test.TestSignIn in demo-plaform/tests/user" />
       </list>
     </recent_temporary>
   </component>
@@ -155,10 +321,12 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1579337941952">
-      <screen x="66" y="24" width="1854" height="1056" />
+    <state x="1016" y="344" width="432" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1580657857157">
+      <screen x="66" y="24" width="2494" height="1416" />
     </state>
-    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser/66.24.1854.1056@66.24.1854.1056" timestamp="1579337941952" />
+    <state x="2651" y="244" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.24.1920.1056@1920.0.1920.1080" timestamp="1580468097582" />
+    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser/66.24.1854.1056@66.24.1854.1056" timestamp="1580392634761" />
+    <state x="1016" y="344" key="#com.intellij.ide.util.MemberChooser/66.24.2494.1416@66.24.2494.1416" timestamp="1580657857157" />
     <state x="696" y="195" width="584" height="713" key="#go_build_beta-git-service" timestamp="1579277013367">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
@@ -167,54 +335,93 @@
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1579942768206" />
-    <state width="1812" height="262" key="GridCell.Tab.0.bottom" timestamp="1580053626116">
+    <state width="2452" height="373" key="GridCell.Tab.0.bottom" timestamp="1580629582924">
+      <screen x="66" y="24" width="2494" height="1416" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701312" />
+    <state width="2452" height="373" key="GridCell.Tab.0.bottom/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
+    <state width="2452" height="373" key="GridCell.Tab.0.center" timestamp="1580629582924">
+      <screen x="66" y="24" width="2494" height="1416" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701310" />
+    <state width="2452" height="373" key="GridCell.Tab.0.center/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
+    <state width="2452" height="373" key="GridCell.Tab.0.left" timestamp="1580629582924">
+      <screen x="66" y="24" width="2494" height="1416" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701309" />
+    <state width="2452" height="373" key="GridCell.Tab.0.left/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
+    <state width="2452" height="373" key="GridCell.Tab.0.right" timestamp="1580629582924">
+      <screen x="66" y="24" width="2494" height="1416" />
+    </state>
+    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701311" />
+    <state width="2452" height="373" key="GridCell.Tab.0.right/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
+    <state width="1812" height="222" key="GridCell.Tab.1.bottom" timestamp="1580387244473">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
-    <state width="1812" height="262" key="GridCell.Tab.0.center" timestamp="1580053626116">
+    <state width="1812" height="222" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
+    <state width="1812" height="222" key="GridCell.Tab.1.center" timestamp="1580387244473">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
-    <state width="1812" height="262" key="GridCell.Tab.0.left" timestamp="1580053626116">
+    <state width="1812" height="222" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
+    <state width="1812" height="222" key="GridCell.Tab.1.left" timestamp="1580387244473">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
-    <state width="1812" height="262" key="GridCell.Tab.0.right" timestamp="1580053626116">
+    <state width="1812" height="222" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
+    <state width="1812" height="222" key="GridCell.Tab.1.right" timestamp="1580387244473">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580053626116" />
-    <state width="1812" height="346" key="GridCell.Tab.1.bottom" timestamp="1578758048450">
+    <state width="1812" height="222" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
+    <state x="494" y="176" key="SettingsEditor" timestamp="1580319604644">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="346" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048450" />
-    <state width="1812" height="346" key="GridCell.Tab.1.center" timestamp="1578758048449">
+    <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1580319604644" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580919380301">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="346" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048449" />
-    <state width="1812" height="346" key="GridCell.Tab.1.left" timestamp="1578758048448">
-      <screen x="66" y="24" width="1854" height="1056" />
-    </state>
-    <state width="1812" height="346" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048448" />
-    <state width="1812" height="346" key="GridCell.Tab.1.right" timestamp="1578758048449">
-      <screen x="66" y="24" width="1854" height="1056" />
-    </state>
-    <state width="1812" height="346" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1578758048449" />
-    <state x="494" y="176" key="SettingsEditor" timestamp="1578730916886">
-      <screen x="66" y="24" width="1854" height="1056" />
-    </state>
-    <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1578730916886" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579366689834">
-      <screen x="66" y="24" width="1854" height="1056" />
-    </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1579366689834" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1580919380301" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/app.go</url>
+          <url>file://$PROJECT_DIR$/routes/user/auth.go</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user/user.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user/user.go</url>
+          <line>60</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/model/db/user.go</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tests/repo/file_test.go</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/repo/file.go</url>
+          <line>33</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/middleware/auth.go</url>
           <line>10</line>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tests/user/user_service_test.go</url>
+          <line>111</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -37,7 +37,7 @@ type User struct {
 	Location    string
 	Website     string
 	Rands       string `xorm:"VARCHAR(10)"`
-	Salt        string `xorm:"VARCHAR(10)"`
+	Salt        uint64
 
 	Created     time.Time `xorm:"-" json:"-"`
 	CreatedUnix int64
@@ -45,19 +45,20 @@ type User struct {
 	UpdatedUnix int64
 }
 
-func (user *User)GetByUser()(*User, error) {
+func GetByUser(user *User)(bool, error) {
 	has,err := Engine.Get(user)
 	if err != nil {
-		return nil, err
+		return false, err
 	}
-	if has {
-		return user,nil
-	} else {
-		return nil, err
-	}
+	return has, nil
 }
 
-func (user *User)Insert() error {
+func CountUser(user *User) (int64, error) {
+	count, err := Engine.Count(user)
+	return count, err
+}
+
+func CreateUser(user *User) error {
 	_, err := Engine.Insert(user)
 	if err != nil {
 		return err
@@ -65,7 +66,7 @@ func (user *User)Insert() error {
 	return nil
 }
 
-func (user *User)FindListByUser(page int, pageSize int, order string) (*[]User, error) {
+func FindListByUser(user *User, page int, pageSize int, order string) (*[]User, error) {
 	var allusers []User
 	err := Engine.Limit(pageSize,page*pageSize).OrderBy(order).Find(&allusers) //Get id>3 limit 10 offset 20
 	if err != nil {
@@ -74,12 +75,12 @@ func (user *User)FindListByUser(page int, pageSize int, order string) (*[]User, 
 	return &allusers, nil
 }
 
-func (user *User)Delete() error{
+func DeleteUser(user *User) error{
 	_, err := Engine.Delete(user)
 	return err
 }
 
-func (user *User) Update() error{
+func UpdateUser(user *User) error{
 	affected, err := Engine.ID(user.Id).Update(user)
 
 	if err != nil && affected != 0 {
@@ -89,7 +90,7 @@ func (user *User) Update() error{
 	return nil
 }
 
-func (usr *User)FindListByUserID() ([]*Repository, error) {
+func FindListByUserID(usr *User) ([]*Repository, error) {
 	var repoList [] *Repository
 	err := Engine.Where("owner_id = ?", usr.Id).OrderBy("created_unix").Find(repoList)
 	if err != nil {

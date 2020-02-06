@@ -5,17 +5,19 @@ import "time"
 type DockerStatus int
 
 const (
-	DockerRunning = iota
-	DockerStopping
-	DockerStoped
-	DockerBuilding
-	DockerBuildSuccess
-	DockerBuildFail
+	DockerRunning = iota //0
+	DockerStopping //1
+	DockerStoped //2
+	DockerBuilding //3
+	DockerBuildSuccess //4
+	DockerBuildFail //5
 	)
 
 type  DockerContainer struct {
 	ID int64
-	UserID int64
+
+	ContainerID string
+	OwnerID int64
 	Name string
 	Desc string
 

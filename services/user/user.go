@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"demo-plaform/model/db"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"math/rand"
 	"time"
@@ -19,18 +20,28 @@ type LoginResult struct {
 }
 
 type Register struct {
-	Account string
+	Account string `form:"account" json:"account" binding:"required"`
 	Type string
-	Passwd string
+	Passwd string `form:"passwd" json:"passwd" xml:"passwd"  binding:"required"`
 	IP string
 }
 
 func SignIn(login *Login) (string, error) {
 
-	usr,err := db.GetByUser(&db.User{
-		Email:     login.Account,
+	var usr = &db.User{
+		LoginName:     login.Account,
 		LoginType: db.LoginNotype,
-	})
+	}
+
+	has,err := db.GetByUser(usr)
+
+	if err != nil {
+		return "", err
+	}
+
+	if !has {
+		return "", errors.New("user is not exist")
+	}
 
 	hasher := md5.New()
 
@@ -44,6 +55,19 @@ func SignIn(login *Login) (string, error) {
 }
 
 func SignUp(register *Register) (string, error) {
+
+	// 是否存在
+	has, err := db.GetByUser(&db.User{
+		LoginName:      register.Account,
+		LoginType: db.LoginNotype,
+	})
+	if err != nil {
+		return "", err
+	}
+	if has {
+		return "", errors.New("the user is already exist")
+	}
+
 	now := time.Now()
 	hasher := md5.New()
 	salt := rand.Uint64()
@@ -55,7 +79,7 @@ func SignUp(register *Register) (string, error) {
 		Email:           register.Account,
 		LoginType:       db.LoginNotype,
 		LoginSource:     0,
-		LoginName:       "",
+		LoginName:       register.Account,
 		Type:            db.UserTypeIndividual,
 		OwnedOrgs:       nil,
 		Orgs:            nil,
@@ -66,14 +90,15 @@ func SignUp(register *Register) (string, error) {
 		Location:        "",
 		Website:         "",
 		Rands:           "",
-		Salt:            string(salt),
+		Salt:            salt,
 		Created:         now,
 		CreatedUnix:     now.Unix(),
 		Updated:         now,
 		UpdatedUnix:     now.Unix(),
 	}
 
-	err := db.Insert(&usr)
+	
+	err = db.CreateUser(&usr)
 	if err != nil {
 		return "", err
 	}
@@ -87,8 +112,9 @@ func SignUp(register *Register) (string, error) {
 	return token, nil
 }
 
+
 func updateAvatar(userID int64, avatar string) error {
-	err := db.Update(&db.User{
+	err := db.UpdateUser(&db.User{
 		Id: userID,
 		Avatar: avatar,
 	})
@@ -106,9 +132,9 @@ func exit(token string) error {
 	if err != nil {
 		return err
 	}
-	err = db.Update(&db.User{
+	err = db.UpdateUser(&db.User{
 		Id: sign.Ac,
-		Salt: string(rand.Uint64()),
+		Salt: rand.Uint64(),
 	})
 	if err != nil {
 		return err

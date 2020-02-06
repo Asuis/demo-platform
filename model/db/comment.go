@@ -12,8 +12,6 @@ type Comment struct {
 
 	BindTypeId int64
 
-
-
 	Created     time.Time `xorm:"-" json:"-"`
 	CreatedUnix int64
 	Updated     time.Time `xorm:"-" json:"-"`

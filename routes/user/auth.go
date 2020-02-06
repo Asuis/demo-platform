@@ -5,10 +5,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
-type Login struct {
-	User string `form:"user" json:"user" xml:"user"  binding:"required"`
-	Password string `form:"password" json:"password" xml:"password" binding:"required"`
-}
 
 func SignIn(ctx *gin.Context) {
 	var json user.Login

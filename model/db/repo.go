@@ -63,10 +63,32 @@ type Repository struct {
 	UpdatedUnix int64
 }
 
-func Insert(repository * Repository) error {
+func CreateRepository(repository * Repository) error {
 	_, err := Engine.Insert(repository)
 	if err != nil {
 		return err
 	}
 	return nil
+}
+
+func GetRepository(repository *Repository) (bool, error) {
+	has, err := Engine.Get(repository)
+	if err !=nil {
+		return false, nil
+	}
+
+	return has, nil
+}
+
+func ListRepository(repository *Repository, page int, pageSize int, order string) (*[]Repository, error){
+
+	var res []Repository
+
+	err := Engine.Where("OwnerId = ?", repository.OwnerID).Limit(pageSize,page*pageSize).OrderBy(order).Find(&res) //Get id>3 limit 10 offset 20
+
+	if err != nil {
+		return nil, err
+	}
+
+	return &res, nil
 }

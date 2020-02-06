@@ -1,14 +1,14 @@
 package middleware
 
 import (
+	"demo-plaform/services/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"demo-plaform/services/user"
 )
 
 func Auth() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		tokenString := ctx.GetHeader("Auth")
+		tokenString := ctx.GetHeader("Authorization")
 		claims, err := user.ParseToken(tokenString)
 		if err!=nil {
 			ctx.Status(http.StatusNonAuthoritativeInfo)

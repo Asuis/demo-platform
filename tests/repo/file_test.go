@@ -13,7 +13,7 @@ func TestSearchRepoDir(t *testing.T) {
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
-	for _, item := range list {
+	for _, item := range *list {
 		log.Printf("Name %s", item.Name())
 	}
 }
@@ -23,9 +23,9 @@ func TestGetRawFile(t *testing.T)  {
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
-	for _, item := range list {
+	for _, item := range *list {
 		log.Printf("Name %s", item.Name())
-		blob ,err:=repo.GetRawFile("/var/srv/git/asuis/test.git", item.ID.String())
+		blob ,err:=repo.GetRawFile("/var/srv/git/asuis/test.git", item.Name())
 		if err != nil {
 			log.Fatalf("%v", err)
 		}
