@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/proxy/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/test/test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/admin/admin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/admin/sys.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/repo/repo_service_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/db/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/db/docker_container.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/docker_container.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/db/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/db/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/repo/branch.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/branch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker/docker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user/auths.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/auths.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/docker/docker_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/docker/docker_client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/repo/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/repo/repo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/user/user_service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/user_service_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +37,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../github.com/gogs" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -371,10 +341,10 @@
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state width="1812" height="222" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
-    <state x="494" y="176" key="SettingsEditor" timestamp="1580319604644">
+    <state x="494" y="176" key="SettingsEditor" timestamp="1581147430429">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1580319604644" />
+    <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1581147430429" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580919380301">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
