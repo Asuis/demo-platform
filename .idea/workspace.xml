@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/repo/repo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestStdin in demo-plaform/tests/docker">
+  <component name="RunManager" selected="Go Build.go build demo-plaform">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -195,29 +201,16 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestAuthMiddleware in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo-plaform" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/user" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/user" />
+      <filePath value="$PROJECT_DIR$/app.go" />
+      <package value="demo-plaform" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestAuthMiddleware$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestParseToken in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/user" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/user" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestParseToken$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSearchRepoDir in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCreateRepo in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/tests/repo" />
       <framework value="gotest" />
@@ -225,7 +218,18 @@
       <package value="demo-plaform/tests/repo" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSearchRepoDir$" />
+      <pattern value="^TestCreateRepo$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetRepoList in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/repo" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="demo-plaform/tests/repo" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetRepoList$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSignIn in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -263,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestStdin in demo-plaform/tests/docker" />
-        <item itemvalue="Go Test.TestSearchRepoDir in demo-plaform/tests/repo" />
-        <item itemvalue="Go Test.TestAuthMiddleware in demo-plaform/tests/user" />
-        <item itemvalue="Go Test.TestParseToken in demo-plaform/tests/user" />
+        <item itemvalue="Go Test.TestGetRepoList in demo-plaform/tests/repo" />
+        <item itemvalue="Go Test.TestCreateRepo in demo-plaform/tests/repo" />
         <item itemvalue="Go Test.TestSignIn in demo-plaform/tests/user" />
+        <item itemvalue="Go Build.go build demo-plaform" />
+        <item itemvalue="Go Test.TestStdin in demo-plaform/tests/docker" />
       </list>
     </recent_temporary>
   </component>
@@ -301,50 +305,58 @@
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="696" y="195" width="584" height="713" key="#go_build_beta-git-service/66.24.1854.1056@66.24.1854.1056" timestamp="1579277013367" />
+    <state x="701" y="195" key="#go_build_demo-plaform" timestamp="1581442175419">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="701" y="195" key="#go_build_demo-plaform/66.24.1854.1056@66.24.1854.1056" timestamp="1581442175419" />
     <state x="781" y="310" key="FileChooserDialogImpl" timestamp="1579942768206">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1579942768206" />
-    <state width="2452" height="373" key="GridCell.Tab.0.bottom" timestamp="1580629582924">
-      <screen x="66" y="24" width="2494" height="1416" />
+    <state width="1812" height="261" key="GridCell.Tab.0.bottom" timestamp="1581406251616">
+      <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701312" />
+    <state width="1812" height="261" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251616" />
     <state width="2452" height="373" key="GridCell.Tab.0.bottom/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="2452" height="373" key="GridCell.Tab.0.center" timestamp="1580629582924">
-      <screen x="66" y="24" width="2494" height="1416" />
+    <state width="1812" height="261" key="GridCell.Tab.0.center" timestamp="1581406251615">
+      <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701310" />
+    <state width="1812" height="261" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251615" />
     <state width="2452" height="373" key="GridCell.Tab.0.center/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="2452" height="373" key="GridCell.Tab.0.left" timestamp="1580629582924">
-      <screen x="66" y="24" width="2494" height="1416" />
+    <state width="1812" height="261" key="GridCell.Tab.0.left" timestamp="1581406251614">
+      <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701309" />
+    <state width="1812" height="261" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251614" />
     <state width="2452" height="373" key="GridCell.Tab.0.left/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="2452" height="373" key="GridCell.Tab.0.right" timestamp="1580629582924">
-      <screen x="66" y="24" width="2494" height="1416" />
+    <state width="1812" height="261" key="GridCell.Tab.0.right" timestamp="1581406251615">
+      <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="262" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580447701311" />
+    <state width="1812" height="261" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251615" />
     <state width="2452" height="373" key="GridCell.Tab.0.right/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="1812" height="222" key="GridCell.Tab.1.bottom" timestamp="1580387244473">
+    <state width="1812" height="222" key="GridCell.Tab.1.bottom" timestamp="1581266479116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
-    <state width="1812" height="222" key="GridCell.Tab.1.center" timestamp="1580387244473">
+    <state width="1812" height="222" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479116" />
+    <state width="1812" height="222" key="GridCell.Tab.1.center" timestamp="1581266479115">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
-    <state width="1812" height="222" key="GridCell.Tab.1.left" timestamp="1580387244473">
+    <state width="1812" height="222" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479115" />
+    <state width="1812" height="222" key="GridCell.Tab.1.left" timestamp="1581266479115">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
-    <state width="1812" height="222" key="GridCell.Tab.1.right" timestamp="1580387244473">
+    <state width="1812" height="222" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479115" />
+    <state width="1812" height="222" key="GridCell.Tab.1.right" timestamp="1581266479116">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1580387244473" />
+    <state width="1812" height="222" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479116" />
     <state x="494" y="176" key="SettingsEditor" timestamp="1581147430429">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1581147430429" />
+    <state x="676" y="156" width="774" height="792" key="find.popup" timestamp="1581442156261">
+      <screen x="66" y="24" width="1854" height="1056" />
+    </state>
+    <state x="676" y="156" width="774" height="792" key="find.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1581442156261" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580919380301">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
@@ -392,6 +404,11 @@
           <url>file://$PROJECT_DIR$/tests/user/user_service_test.go</url>
           <line>111</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tests/repo/repo_test.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

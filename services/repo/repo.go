@@ -1,7 +1,7 @@
 package repo
 
 import (
-	"demo-plaform/model/db"
+	"demo-platform/model/db"
 	"errors"
 	"fmt"
 	"github.com/gogs/git-module"
@@ -100,6 +100,7 @@ func Create(form *RepositoryInit, user *db.User) error  {
 		_ = session.Rollback()
 		return err
 	}
+	_ = session.Commit()
 
 	return err
 }

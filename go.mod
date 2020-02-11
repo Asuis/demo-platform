@@ -1,4 +1,4 @@
-module demo-plaform
+module demo-platform
 
 go 1.13
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"demo-plaform/conf"
-	"demo-plaform/model/db"
+	"demo-platform/conf"
+	"demo-platform/model/db"
 	"log"
 )
 

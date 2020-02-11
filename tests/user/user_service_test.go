@@ -2,9 +2,9 @@ package user
 
 import (
 	"bytes"
-	"demo-plaform/conf"
-	"demo-plaform/model/db"
-	"demo-plaform/services/user"
+	"demo-platform/conf"
+	"demo-platform/model/db"
+	"demo-platform/services/user"
 	"encoding/json"
 	"log"
 	"math/rand"

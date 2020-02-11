@@ -2,7 +2,7 @@ package user
 
 import (
 	"crypto/md5"
-	"demo-plaform/model/db"
+	"demo-platform/model/db"
 	"encoding/hex"
 	"errors"
 	"fmt"
@@ -40,7 +40,7 @@ func SignIn(login *Login) (string, error) {
 	}
 
 	if !has {
-		return "", errors.New("user is not exist")
+		return "", fmt.Errorf("user is not exist or password not incorrect")
 	}
 
 	hasher := md5.New()
@@ -78,6 +78,7 @@ func SignUp(register *Register) (string, error) {
 		Passwd:          hex.EncodeToString(hasher.Sum(nil)),
 		Email:           register.Account,
 		LoginType:       db.LoginNotype,
+		Avatar:			 "https://cdn4.buysellads.net/uu/1/57095/1576856619-ad3.png",
 		LoginSource:     0,
 		LoginName:       register.Account,
 		Type:            db.UserTypeIndividual,

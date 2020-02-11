@@ -1,7 +1,7 @@
 package repo
 
 import (
-	"demo-plaform/services/repo"
+	"demo-platform/services/repo"
 	"fmt"
 	"io"
 	"log"

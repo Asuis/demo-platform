@@ -1,12 +1,12 @@
 package conf
 
 import (
-	"demo-plaform/middleware"
-	"demo-plaform/routes/docker"
-	"demo-plaform/routes/proxy"
-	repo2 "demo-plaform/routes/repo"
-	"demo-plaform/routes/user"
-	"demo-plaform/services/repo"
+	"demo-platform/middleware"
+	"demo-platform/routes/docker"
+	"demo-platform/routes/proxy"
+	repo2 "demo-platform/routes/repo"
+	"demo-platform/routes/user"
+	"demo-platform/services/repo"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -54,7 +54,7 @@ func SetupRouter() *gin.Engine {
 				PUT("/:username/:repo", middleware.Auth(), repo2.Setting).
 				GET("/branch/:username/:repo", middleware.Auth(), repo2.GetRepoBranches).
 				GET("/commit/:username/:repo", middleware.Auth()).
-				POST("/list", middleware.Auth(), repo2.List)
+				GET("/list/:pageSize/:page/:order", middleware.Auth(), repo2.List)
 		}
 
 		cloudRoutes := v1.Group("/cloud")
@@ -72,7 +72,7 @@ func SetupRouter() *gin.Engine {
 				POST("/action/restart", ).
 				GET("/info/:cloud_id", docker.InfoDocker).
 				GET("/stat/:cloud_id", docker.StatDocker).
-				GET("/console/:cloud_id", middleware.Auth(), docker.AttachDocker)
+				GET("/console/:cloud_id", docker.AttachDocker)
 		}
 
 		proxyRoutes := v1.Group("/proxy")

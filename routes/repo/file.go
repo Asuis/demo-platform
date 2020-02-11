@@ -1,9 +1,9 @@
 package repo
 
 import (
-	"demo-plaform/model/db"
-	"demo-plaform/services/repo"
-	"demo-plaform/services/user"
+	"demo-platform/model/db"
+	"demo-platform/services/repo"
+	"demo-platform/services/user"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/gogs/git-module"

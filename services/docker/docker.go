@@ -2,7 +2,7 @@ package docker
 
 import (
 	"context"
-	"demo-plaform/model/db"
+	"demo-platform/model/db"
 	"fmt"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"

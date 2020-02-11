@@ -1,6 +1,6 @@
 package admin
 
-import "demo-plaform/model/db"
+import "demo-platform/model/db"
 
 func ListUser(page int, pageSize int, order string) (*[] db.User, error) {
 	var list [] db.User

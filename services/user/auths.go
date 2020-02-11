@@ -1,7 +1,7 @@
 package user
 
 import (
-	"demo-plaform/model/db"
+	"demo-platform/model/db"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"strings"

@@ -2,9 +2,9 @@ package repo
 
 import (
 	"bytes"
-	"demo-plaform/conf"
-	"demo-plaform/model/db"
-	"demo-plaform/services/repo"
+	"demo-platform/conf"
+	"demo-platform/model/db"
+	"demo-platform/services/repo"
 	"encoding/json"
 	"github.com/stretchr/testify/assert"
 	"log"

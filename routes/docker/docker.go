@@ -3,9 +3,9 @@ package docker
 import (
 	"bufio"
 	"context"
-	"demo-plaform/model/db"
-	"demo-plaform/services/docker"
-	"demo-plaform/services/user"
+	"demo-platform/model/db"
+	"demo-platform/services/docker"
+	"demo-platform/services/user"
 	"fmt"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
@@ -280,9 +280,14 @@ func StatDocker(ctx *gin.Context) {
 }
 
 func AttachDocker(ctx *gin.Context) {
-	sign, _ := ctx.Get("u")
+	t := ctx.Param("t")
+
+	sign, err := user.ParseToken(t)
+
 	id := ctx.Param("cloud_id")
-	c, err := db.Engine.Count(&db.DockerContainer{ContainerID: id, OwnerID:sign.(user.SignedData).Ac})
+
+	c, err := db.Engine.Count(&db.DockerContainer{ContainerID: id, OwnerID:sign.Ac})
+
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

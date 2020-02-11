@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"demo-plaform/services/user"
+	"demo-platform/services/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
