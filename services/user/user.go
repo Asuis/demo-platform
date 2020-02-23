@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-type Login struct {
+type LoginForm struct {
 	Account string `form:"account" json:"account" binding:"required"`
 	Passwd string `form:"passwd" json:"passwd" xml:"passwd"  binding:"required"`
 }
@@ -26,7 +26,7 @@ type Register struct {
 	IP string
 }
 
-func SignIn(login *Login) (string, error) {
+func SignIn(login *LoginForm) (string, error) {
 
 	var usr = &db.User{
 		LoginName:     login.Account,
@@ -113,6 +113,23 @@ func SignUp(register *Register) (string, error) {
 	return token, nil
 }
 
+func Login(login *LoginForm) (*db.User, error) {
+	var usr = db.User{
+		LoginName:     login.Account,
+		LoginType: db.LoginNotype,
+	}
+
+	has,err := db.GetByUser(&usr)
+
+	if err != nil {
+		return nil, err
+	}
+
+	if !has {
+		return nil, fmt.Errorf("user is not exist or password not incorrect")
+	}
+	return &usr, nil
+}
 
 func updateAvatar(userID int64, avatar string) error {
 	err := db.UpdateUser(&db.User{

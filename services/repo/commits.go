@@ -3,10 +3,11 @@ package repo
 import (
 	"container/list"
 	"github.com/gogs/git-module"
+	"path"
 )
 
-func GetCommits(path string, page int, revision string) (*list.List, error){
-	repo, err := git.OpenRepository("path")
+func GetCommits(p string, page int, revision string) (*list.List, error){
+	repo, err := git.OpenRepository(path.Join(BaseDir, p))
 	if err != nil {
 		return nil,err
 	}

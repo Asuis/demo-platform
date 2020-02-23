@@ -90,7 +90,7 @@ func Create(form *RepositoryInit, user *db.User) error  {
 		UpdatedUnix:           now.Unix(),
 	})
 
-	if strings.HasSuffix(p, ".git") {
+	if !strings.HasSuffix(p, ".git") {
 		p += ".git"
 	}
 
@@ -100,7 +100,7 @@ func Create(form *RepositoryInit, user *db.User) error  {
 		_ = session.Rollback()
 		return err
 	}
-	_ = session.Commit()
+	err = session.Commit()
 
 	return err
 }

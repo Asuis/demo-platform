@@ -15,7 +15,7 @@ func CreateRepository(ctx *gin.Context) {
 
 	sign, _ := ctx.Get("u")
 
-	s := sign.(user.SignedData)
+	s := sign.(*user.SignedData)
 
 	if err := ctx.ShouldBindJSON(&json); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -46,7 +46,7 @@ func GetRepoInfo(ctx *gin.Context) {
 	r := ctx.Param("repo")
 
 	repository, err := repo.Info(username + "/"+r, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 
 	if err != nil {
@@ -76,7 +76,7 @@ func List(ctx *gin.Context) {
 	order := ctx.Param("order")
 
 	list, err := repo.List(&db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	}, page, pageSize, order)
 
 	if err != nil {
@@ -102,7 +102,7 @@ func Delete(ctx *gin.Context) {
 	r := ctx.Param("repo")
 
 	err := repo.Del(username + "/" + r, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 
 	if err != nil {

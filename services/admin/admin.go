@@ -29,3 +29,15 @@ func ListRepository(page int, pageSize int, order string) (*[] db.Repository, er
 	return &list, nil
 }
 
+func ListImage(page int, pageSize int, order string) (*[]db.DockerImage, error) {
+	var list [] db.DockerImage
+	err := db.Engine.Limit(pageSize, page).OrderBy(order).Find(&list)
+	if err != nil {
+		return nil, err
+	}
+	return &list, nil
+}
+
+func ListProxy(page int, pageSize int, order string) {}
+
+func ListDisplay() {}

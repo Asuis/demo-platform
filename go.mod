@@ -8,7 +8,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v1.13.1
-	github.com/docker/go-connections v0.4.0 // indirect
+	github.com/docker/go-connections v0.4.0
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-playground/universal-translator v0.17.0 // indirect
@@ -25,6 +25,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/pkg/errors v0.9.0 // indirect
 	github.com/stretchr/testify v1.4.0
+	github.com/tencentcloud/tencentcloud-sdk-go v3.0.123+incompatible // indirect
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2 // indirect
 	golang.org/x/sys v0.0.0-20200202164722-d101bd2416d5 // indirect
 	google.golang.org/genproto v0.0.0-20200205142000-a86caf926a67 // indirect

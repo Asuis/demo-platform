@@ -9,7 +9,7 @@ import (
 )
 
 func TestSearchRepoDir(t *testing.T) {
-	list, err := repo.SearchDir("/var/srv/git/asuis/test.git")
+	list, err := repo.SearchDir("/asuis/test.git", "/")
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
@@ -19,7 +19,7 @@ func TestSearchRepoDir(t *testing.T) {
 }
 
 func TestGetRawFile(t *testing.T)  {
-	list, err := repo.SearchDir("/var/srv/git/asuis/test.git")
+	list, err := repo.SearchDir("/var/srv/git/asuis/test.git", "")
 	if err != nil {
 		log.Fatalf("%v", err)
 	}

@@ -150,7 +150,7 @@ func ping(ws *websocket.Conn, done chan struct{}) {
 
 func CreateDocker(ctx *gin.Context) {
 
-	var json docker.DockerCreateForm
+	var json docker.CreateForm
 
 	sign, _ := ctx.Get("u")
 
@@ -160,7 +160,7 @@ func CreateDocker(ctx *gin.Context) {
 	}
 
 	ID, err := docker.CreateContainer(&json, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 
 	if err != nil {
@@ -187,7 +187,7 @@ func ListDocker(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	list, err := docker.ListContainers(&db.User{Id:sign.(user.SignedData).Ac},page,pageSize, order)
+	list, err := docker.ListContainers(&db.User{Id:sign.(*user.SignedData).Ac},page,pageSize, order)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -201,7 +201,7 @@ func StopDocker(ctx *gin.Context) {
 	sign, _ := ctx.Get("u")
 	ID := ctx.Param("cloud_id")
 	err := docker.StopContainer(ID, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -215,8 +215,9 @@ func StartDocker(ctx *gin.Context) {
 	sign, _ := ctx.Get("u")
 	ID := ctx.Param("cloud_id")
 	err := docker.StartContainer(ID, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
+
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -229,7 +230,7 @@ func DelDocker(ctx *gin.Context) {
 	sign, _ := ctx.Get("u")
 	ID := ctx.Param("cloud_id")
 	err := docker.RmContainer(ID, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -243,7 +244,7 @@ func InfoDocker(ctx *gin.Context) {
 	sign, _ := ctx.Get("u")
 	ID := ctx.Param("cloud_id")
 	res, err := docker.StatusContainer(ID, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -263,7 +264,7 @@ func StatDocker(ctx *gin.Context) {
 	sign, _ := ctx.Get("u")
 	ID := ctx.Param("cloud_id")
 	res, err := docker.StatusContainer(ID, &db.User{
-		Id: sign.(user.SignedData).Ac,
+		Id: sign.(*user.SignedData).Ac,
 	})
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -283,6 +284,10 @@ func AttachDocker(ctx *gin.Context) {
 	t := ctx.Param("t")
 
 	sign, err := user.ParseToken(t)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
 
 	id := ctx.Param("cloud_id")
 
@@ -296,4 +301,21 @@ func AttachDocker(ctx *gin.Context) {
 		ctx.JSON(http.StatusNotFound, gin.H{"error": "not found"})
 	}
 	go ServeWs(ctx.Writer, ctx.Request, id)
+}
+
+func UpdateDocker(ctx *gin.Context) {
+	sign, _ := ctx.Get("u")
+	var json docker.UpdateForm
+	if err := ctx.ShouldBindJSON(&json); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	data, err := docker.UpdateContainer(&json, &db.User{
+		Id: sign.(user.SignedData).Ac,
+	})
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	ctx.JSON(http.StatusOK, data)
 }

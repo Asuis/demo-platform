@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49aab59a-bac3-4c4e-8368-b83b45503abf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/conf/conf.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/display.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/docker_proxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/display/display.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker/admin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker/proxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker/sys.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ext/ali_cloud.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ext/alipay.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ext/tengxun_cloud.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ext/weixin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/group/group.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/proxy/proxy_main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/app.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/conf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin/setting.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/setting.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/docker/docker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/proxy/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/proxy/proxy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/repo/repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/admin/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/admin/admin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker/docker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker/image.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker/image.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repo/commits.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/commits.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/repo/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/file.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/repo/repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/repo/repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/repo/repo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/repo_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/docker/docker_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/docker/docker_client_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/repo/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/repo/repo_service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/repo/repo_service_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/user_service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/user_service_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +74,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github.com/gogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kratos-demo" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd" />
+      <recent name="$PROJECT_DIR$/services/docker" />
       <recent name="$PROJECT_DIR$/routes/proxy" />
       <recent name="$PROJECT_DIR$/model/db" />
       <recent name="$PROJECT_DIR$/model/repo" />
-      <recent name="$PROJECT_DIR$/model/docker" />
-      <recent name="$PROJECT_DIR$/model/user" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -190,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo-plaform">
+  <component name="RunManager" selected="Go Build.go build demo-platform">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -201,57 +231,44 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo-plaform" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo-platform" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/app.go" />
-      <package value="demo-plaform" />
+      <package value="demo-platform" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestCreateRepo in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo-platform/tests/proxy" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/repo" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/repo" />
+      <filePath value="$PROJECT_DIR$/tests/proxy/proxy_main.go" />
+      <package value="demo-platform/tests/proxy" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestCreateRepo$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetRepoList in demo-plaform/tests/repo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/repo" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/repo" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetRepoList$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSignIn in demo-plaform/tests/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="demo-platform" />
-      <working_directory value="$PROJECT_DIR$/tests/user" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/user" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSignIn$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestStdin in demo-plaform/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDockerCreateService in demo-platform/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="demo-platform" />
       <working_directory value="$PROJECT_DIR$/tests/docker" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="demo-plaform/tests/docker" />
+      <package value="demo-platform/tests/docker" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestStdin$" />
+      <pattern value="^TestDockerCreateService$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDockerStartService in demo-platform/tests/docker" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/docker" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="demo-platform/tests/docker" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestDockerStartService$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -265,13 +282,23 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go test demo-platform/tests/proxy" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-platform" />
+      <working_directory value="$PROJECT_DIR$/tests/proxy" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="demo-platform/tests/proxy" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestGetRepoList in demo-plaform/tests/repo" />
-        <item itemvalue="Go Test.TestCreateRepo in demo-plaform/tests/repo" />
-        <item itemvalue="Go Test.TestSignIn in demo-plaform/tests/user" />
-        <item itemvalue="Go Build.go build demo-plaform" />
-        <item itemvalue="Go Test.TestStdin in demo-plaform/tests/docker" />
+        <item itemvalue="Go Build.go build demo-platform" />
+        <item itemvalue="Go Build.go build demo-platform/tests/proxy" />
+        <item itemvalue="Go Test.go test demo-platform/tests/proxy" />
+        <item itemvalue="Go Test.TestDockerStartService in demo-platform/tests/docker" />
+        <item itemvalue="Go Test.TestDockerCreateService in demo-platform/tests/docker" />
       </list>
     </recent_temporary>
   </component>
@@ -295,11 +322,11 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1016" y="344" width="432" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1580657857157">
-      <screen x="66" y="24" width="2494" height="1416" />
+    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1582398268585">
+      <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="2651" y="244" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.24.1920.1056@1920.0.1920.1080" timestamp="1580468097582" />
-    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser/66.24.1854.1056@66.24.1854.1056" timestamp="1580392634761" />
+    <state x="772" y="263" width="432" height="576" key="#com.intellij.ide.util.MemberChooser/66.24.1854.1056@66.24.1854.1056" timestamp="1582398268585" />
     <state x="1016" y="344" key="#com.intellij.ide.util.MemberChooser/66.24.2494.1416@66.24.2494.1416" timestamp="1580657857157" />
     <state x="696" y="195" width="584" height="713" key="#go_build_beta-git-service" timestamp="1579277013367">
       <screen x="66" y="24" width="1854" height="1056" />
@@ -309,58 +336,58 @@
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="701" y="195" key="#go_build_demo-plaform/66.24.1854.1056@66.24.1854.1056" timestamp="1581442175419" />
-    <state x="781" y="310" key="FileChooserDialogImpl" timestamp="1579942768206">
+    <state x="781" y="310" key="FileChooserDialogImpl" timestamp="1582433199528">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1579942768206" />
-    <state width="1812" height="261" key="GridCell.Tab.0.bottom" timestamp="1581406251616">
+    <state x="781" y="310" key="FileChooserDialogImpl/66.24.1854.1056@66.24.1854.1056" timestamp="1582433199528" />
+    <state width="1812" height="186" key="GridCell.Tab.0.bottom" timestamp="1582396725659">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="261" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251616" />
+    <state width="1812" height="186" key="GridCell.Tab.0.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1582396725659" />
     <state width="2452" height="373" key="GridCell.Tab.0.bottom/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="1812" height="261" key="GridCell.Tab.0.center" timestamp="1581406251615">
+    <state width="1812" height="186" key="GridCell.Tab.0.center" timestamp="1582396725658">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="261" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251615" />
+    <state width="1812" height="186" key="GridCell.Tab.0.center/66.24.1854.1056@66.24.1854.1056" timestamp="1582396725658" />
     <state width="2452" height="373" key="GridCell.Tab.0.center/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="1812" height="261" key="GridCell.Tab.0.left" timestamp="1581406251614">
+    <state width="1812" height="186" key="GridCell.Tab.0.left" timestamp="1582396725657">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="261" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251614" />
+    <state width="1812" height="186" key="GridCell.Tab.0.left/66.24.1854.1056@66.24.1854.1056" timestamp="1582396725657" />
     <state width="2452" height="373" key="GridCell.Tab.0.left/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="1812" height="261" key="GridCell.Tab.0.right" timestamp="1581406251615">
+    <state width="1812" height="186" key="GridCell.Tab.0.right" timestamp="1582396725658">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="261" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1581406251615" />
+    <state width="1812" height="186" key="GridCell.Tab.0.right/66.24.1854.1056@66.24.1854.1056" timestamp="1582396725658" />
     <state width="2452" height="373" key="GridCell.Tab.0.right/66.24.2494.1416@66.24.2494.1416" timestamp="1580629582924" />
-    <state width="1812" height="222" key="GridCell.Tab.1.bottom" timestamp="1581266479116">
+    <state width="1812" height="426" key="GridCell.Tab.1.bottom" timestamp="1582395886539">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479116" />
-    <state width="1812" height="222" key="GridCell.Tab.1.center" timestamp="1581266479115">
+    <state width="1812" height="426" key="GridCell.Tab.1.bottom/66.24.1854.1056@66.24.1854.1056" timestamp="1582395886539" />
+    <state width="1812" height="426" key="GridCell.Tab.1.center" timestamp="1582395886539">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479115" />
-    <state width="1812" height="222" key="GridCell.Tab.1.left" timestamp="1581266479115">
+    <state width="1812" height="426" key="GridCell.Tab.1.center/66.24.1854.1056@66.24.1854.1056" timestamp="1582395886539" />
+    <state width="1812" height="426" key="GridCell.Tab.1.left" timestamp="1582395886538">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479115" />
-    <state width="1812" height="222" key="GridCell.Tab.1.right" timestamp="1581266479116">
+    <state width="1812" height="426" key="GridCell.Tab.1.left/66.24.1854.1056@66.24.1854.1056" timestamp="1582395886538" />
+    <state width="1812" height="426" key="GridCell.Tab.1.right" timestamp="1582395886539">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state width="1812" height="222" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1581266479116" />
+    <state width="1812" height="426" key="GridCell.Tab.1.right/66.24.1854.1056@66.24.1854.1056" timestamp="1582395886539" />
     <state x="494" y="176" key="SettingsEditor" timestamp="1581147430429">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
     <state x="494" y="176" key="SettingsEditor/66.24.1854.1056@66.24.1854.1056" timestamp="1581147430429" />
-    <state x="676" y="156" width="774" height="792" key="find.popup" timestamp="1581442156261">
+    <state x="676" y="156" width="774" height="792" key="find.popup" timestamp="1581443913335">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state x="676" y="156" width="774" height="792" key="find.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1581442156261" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580919380301">
+    <state x="676" y="156" width="774" height="792" key="find.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1581443913335" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581794212302">
       <screen x="66" y="24" width="1854" height="1056" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1580919380301" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/66.24.1854.1056@66.24.1854.1056" timestamp="1581794212302" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -372,33 +399,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/services/user/user.go</url>
-          <line>35</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/services/user/user.go</url>
           <line>60</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/model/db/user.go</url>
-          <line>48</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/tests/repo/file_test.go</url>
           <line>25</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/services/repo/file.go</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/middleware/auth.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/tests/user/user_service_test.go</url>
@@ -409,6 +416,41 @@
           <url>file://$PROJECT_DIR$/tests/repo/repo_test.go</url>
           <line>19</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tests/repo/repo_service_test.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/routes/repo/repo.go</url>
+          <line>13</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../../pkg/mod/github.com/gogs/git-module@v0.8.3/repo.go</url>
+          <line>67</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/repo/repo.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tests/docker/docker_client_test.go</url>
+          <line>157</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/lib/go/src/net/http/httputil/reverseproxy.go</url>
+          <line>177</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/lib/go/src/net/http/httputil/reverseproxy.go</url>
+          <line>233</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,7 +7,7 @@ import (
 )
 
 func SignIn(ctx *gin.Context) {
-	var json user.Login
+	var json user.LoginForm
 	if err := ctx.ShouldBindJSON(&json); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return

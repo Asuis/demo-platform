@@ -11,6 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
+
 func SetupRouter() *gin.Engine {
 
 	r := gin.Default()
@@ -54,7 +55,10 @@ func SetupRouter() *gin.Engine {
 				PUT("/:username/:repo", middleware.Auth(), repo2.Setting).
 				GET("/branch/:username/:repo", middleware.Auth(), repo2.GetRepoBranches).
 				GET("/commit/:username/:repo", middleware.Auth()).
-				GET("/list/:pageSize/:page/:order", middleware.Auth(), repo2.List)
+				GET("/list/:pageSize/:page/:order", middleware.Auth(), repo2.List).
+				GET("/mylist/:pageSize/:page/:order", middleware.Auth(), repo2.List).
+				GET("/file/:username/:repo/*relpath", middleware.Auth(), repo2.SearchDir).
+				GET("/rawfile/:username/:repo/*relpath", middleware.Auth(), repo2.GetRawFile)
 		}
 
 		cloudRoutes := v1.Group("/cloud")
@@ -64,15 +68,15 @@ func SetupRouter() *gin.Engine {
 				return
 			}).
 				POST("/create", middleware.Auth(), docker.CreateDocker).
-				DELETE("/:cloud_id", docker.DelDocker).
-				PUT("/:cloud_id").
-				POST("/list", docker.ListDocker).
-				POST("/action/run", docker.StartDocker).
-				POST("/action/stop", docker.StopDocker).
-				POST("/action/restart", ).
-				GET("/info/:cloud_id", docker.InfoDocker).
-				GET("/stat/:cloud_id", docker.StatDocker).
-				GET("/console/:cloud_id", docker.AttachDocker)
+				DELETE("/:cloud_id",middleware.Auth(), docker.DelDocker).
+				PUT("/:cloud_id", middleware.Auth(), docker.UpdateDocker).
+				POST("/list", middleware.Auth(), docker.ListDocker).
+				POST("/action/run",middleware.Auth(), docker.StartDocker).
+				POST("/action/stop",middleware.Auth(), docker.StopDocker).
+				POST("/action/restart").
+				GET("/info/:cloud_id",middleware.Auth(), docker.InfoDocker).
+				GET("/stat/:cloud_id",middleware.Auth(), docker.StatDocker).
+				GET("/console/:cloud_id",middleware.Auth(), docker.AttachDocker)
 		}
 
 		proxyRoutes := v1.Group("/proxy")
@@ -90,6 +94,7 @@ func SetupRouter() *gin.Engine {
 				GET("/user/:id").
 				GET("/containers").
 				GET("/container/:id").
+				GET("/images").
 				GET("/repositories").
 				GET("/repo/:username/:repo").
 				GET("/auth", middleware.Auth(), func(ctx *gin.Context) {
@@ -97,7 +102,6 @@ func SetupRouter() *gin.Engine {
 				fmt.Println(sign)
 			})
 		}
-
 	}
 
 	return r

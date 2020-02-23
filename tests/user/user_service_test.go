@@ -18,7 +18,7 @@ func TestSignIn(t *testing.T) {
 	url := "http://127.0.0.1:8000/v1/usr/sign_in"
 	contentType := "application/json;charset=utf-8"
 
-	form := &user.Login{
+	form := &user.LoginForm{
 		Account: "asuis",
 		Passwd:  "Demo127117",
 	}

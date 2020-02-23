@@ -21,7 +21,7 @@ var (
 func init() {
 	tables = append(tables,
 		new(User),new(EmailAddress),
-		new(Repository),new(Branch),new(Access),new(Collaboration),new(Mirror),)
+		new(Repository),new(Branch),new(Access),new(Collaboration),new(Mirror),new(DockerImage), new(DockerContainer))
 
 	gonicNames := []string{"SSL"}
 	for _, name := range gonicNames {

@@ -3,6 +3,8 @@ package docker
 import (
 	"bufio"
 	"context"
+	"demo-platform/model/db"
+	"demo-platform/services/docker"
 	"fmt"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
@@ -115,4 +117,43 @@ func TestStdin(t *testing.T) {
 	for input.Scan() {
 		fmt.Println(input.Text())
 	}
+}
+
+func TestDockerCreateService(t *testing.T) {
+	_ = db.SetupDatabase()
+
+	ID, err := docker.CreateContainer(&docker.CreateForm{
+		Name:      "test2",
+		Desc:      "",
+		ImageID:   1,
+		ImageName: "",
+		ImageSha1: "",
+	}, &db.User{
+		Id: 1,
+		Name:"asuis",
+	})
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(ID.ID)
+}
+
+func TestDockerStopService(t *testing.T) {
+}
+
+func TestDockerStartService(t *testing.T) {
+	_ = db.SetupDatabase()
+
+	err := docker.StartContainer("5cd91f9200f5ef64798b5b3b6a94bd5d1de218885821ecffbeb2bbb173a573ce", &db.User{
+		Id: 1,
+	})
+
+	if err != nil {
+		panic(err)
+	}
+}
+
+func TestPullImage(t *testing.T) {
+	_ = db.SetupDatabase()
+	_ = docker.PullImage("centos", &db.User{Id:1})
 }
